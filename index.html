@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: rgb(18, 122, 241);
+            width: 320px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            transition: height 1s ease-in-out;
+            border-radius: 10px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box-1{
+            height: 220px;
+            width: 280px;
+           background-size: cover;
+            border-radius: 10px;
+            transform: translateY(-50px);
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            transition: height 1.5s ease-in-out;
+            overflow: hidden;
+            background-color: red;
+           
+            
+            
+        }
+        .box-1 img{
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px -5px #333;
+            
+            
+            
+        }
+        .box:hover .box-1{
+            height:280px ;
+            box-shadow: 0 5px 5px -5px #333;
+            
+            
+        }
+        .box:hover{
+            height: 400px;
+            box-shadow: 0 0 5px #333;
+        }
+        .box:hover .details{
+            display: block;
+            text-align: center;
+            margin-top: -60px;
+        }
+        .details{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-1 shadow bottom">
+            <img src="img/profile/rsz_zakir.jpg" alt="">
+        </div>
+        <div class="details">
+            <h2>ggggggg</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam autem harum provident ducimus dolorum incidunt voluptates? Pariatur quae harum ipsam.</p>
+        </div>
+    </div>
+</body>
+</html>
